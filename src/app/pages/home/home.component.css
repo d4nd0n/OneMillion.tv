@@ -6,12 +6,6 @@ header {
   color: white;
 }
 
-#video {
-  float: left;
-  padding: 20px;
-  background-color: #000000;
-}
-
 #top-users {
   float: center;
   background-color: #000000;
