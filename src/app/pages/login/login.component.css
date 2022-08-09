@@ -1,6 +1,6 @@
 /* Bordered form */
 form {
-  border: 3px solid #f1f1f1;
+  background-color: #e8e8e8;
 }
 
 /* Full-width inputs */
@@ -12,11 +12,12 @@ input[type='password'] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 
 /* Set a style for all buttons */
 button {
-  background-color: #04aa6d;
+  background-color: #d18b00;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -43,15 +44,16 @@ button:hover {
   margin: 24px 0 12px 0;
 }
 
-/* Avatar image */
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
 /* Add padding to containers */
 .container {
-  padding: 16px;
+  padding: 110px;
+}
+
+.login {
+  padding: 60px;
+  background-color: #f5f5f5;
+  border: 1px solid #000000;
+  border-radius: 25px;
 }
 
 /* The "Forgot password" text */
@@ -69,4 +71,42 @@ span.psw {
   .cancelbtn {
     width: 100%;
   }
+}
+
+.table {
+  display: table; /* Allow the centering to work */
+}
+
+.column {
+  float: center;
+}
+
+.register {
+  text-align: center;
+  color: white;
+  float: center;
+  padding: 10px;
+}
+
+#registerbtn {
+  width: 90%;
+}
+#onemillion {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 55px;
+  color: white;
+}
+
+h2 {
+  font-size: medium;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+h2 span {
+  background-color: #e8e8e8;
+  padding: 0 10px;
 }
