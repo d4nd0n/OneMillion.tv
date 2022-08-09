@@ -1,0 +1,25 @@
+#shop {
+  float: center;
+}
+
+#title {
+  text-align: center;
+  font-size: 70px;
+  color: white;
+}
+
+#subtitle {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.table {
+  display: table; /* Allow the centering to work */
+  margin: 0 auto;
+}
+
+.column {
+  float: left;
+  padding: 40px;
+}
