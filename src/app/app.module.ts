@@ -16,6 +16,7 @@ import { ClipsComponent } from './pages/clips/clips.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -33,6 +34,7 @@ import { CartComponent } from './pages/cart/cart.component';
     LoginComponent,
     ClipsComponent,
     CartComponent,
+    HeaderComponent,
   ],
   bootstrap: [AppComponent],
 })
