@@ -1,0 +1,7 @@
+.table {
+  display: table; /* Allow the centering to work */
+}
+
+.column {
+  float: left;
+}

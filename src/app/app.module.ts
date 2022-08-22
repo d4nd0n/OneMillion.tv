@@ -18,6 +18,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ClipcontrollerComponent } from './components/clipcontroller/clipcontroller.component';
+import { LikebarComponent } from './components/likebar/likebar.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -37,6 +38,7 @@ import { ClipcontrollerComponent } from './components/clipcontroller/clipcontrol
     CartComponent,
     HeaderComponent,
     ClipcontrollerComponent,
+    LikebarComponent,
   ],
   bootstrap: [AppComponent],
 })
