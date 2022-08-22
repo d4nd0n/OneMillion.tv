@@ -4,4 +4,10 @@
 
 .column {
   float: left;
+  padding: 0;
+}
+
+p {
+  text-align: center;
+  color: white;
 }

@@ -48,3 +48,12 @@ body {
   background-color: #04aa6d;
   color: white;
 }
+
+.table {
+  display: table; /* Allow the centering to work */
+  margin: 0 auto;
+}
+
+.column {
+  float: left;
+}

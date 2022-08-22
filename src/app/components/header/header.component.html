@@ -1,19 +1,12 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
-/>
-
-<nav>
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo">OneMillion.tv</a>
-
-    <ul class="right hide-on-med-and-down">
-      <li><a href="#">Search</a></li>
-      <li><a href="#">Chat</a></li>
-      <li><a href="#">Cart</a></li>
-      <li><a href="#">User</a></li>
-    </ul>
+<nav class="navbar">
+  <!-- logo -->
+  <div class="brand">
+    <a routerLink="/home"><p>OneMillion.tv</p></a>
+  </div>
+  <!-- menu -->
+  <div class="button">
+    <a routerLink="/cart"><p>User</p> </a>
+    <a routerLink="/clips"><p>Search</p></a>
+    <a routerLink="/login"><p>Chat</p></a>
   </div>
 </nav>

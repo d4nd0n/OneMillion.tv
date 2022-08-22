@@ -9,6 +9,7 @@ export class HeaderComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+    this.whiteText();
     window.addEventListener('scroll', this.scroll, true);
   }
 
@@ -30,14 +31,13 @@ export class HeaderComponent implements OnInit {
     if (window.scrollY >= scrollHeigth) {
       document.body.style.setProperty('--navbar-scroll', 'white');
       document.body.style.setProperty('--navbar-scroll-text', 'black');
-      document.body.style.setProperty(
-        '--navbar-scroll-shadow',
-        '0px 6px 12px -5px #000000'
-      );
     } else if (window.scrollY < scrollHeigth) {
       document.body.style.setProperty('--navbar-scroll', 'transparent');
       document.body.style.setProperty('--navbar-scroll-text', 'white');
-      document.body.style.setProperty('--navbar-scroll-shadow', 'none');
     }
+  };
+
+  whiteText = (): void => {
+    document.body.style.setProperty('--navbar-scroll-text', 'white');
   };
 }

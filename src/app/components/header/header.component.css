@@ -5,10 +5,18 @@
   -webkit-box-shadow: var(--navbar-scroll-shadow);
   box-shadow: var(--navbar-scroll-shadow);
   position: fixed;
-  padding: 0px 20px;
   z-index: 1;
+  padding: 0;
+  width: 100%;
 }
 
-nav li a:hover {
-  background: red;
+nav a {
+  float: left;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover {
+  color: #dadada;
 }
