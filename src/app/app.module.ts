@@ -19,6 +19,7 @@ import { CartComponent } from './pages/cart/cart.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ClipcontrollerComponent } from './components/clipcontroller/clipcontroller.component';
 import { LikebarComponent } from './components/likebar/likebar.component';
+import { UsertabComponent } from './components/usertab/usertab.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -39,6 +40,7 @@ import { LikebarComponent } from './components/likebar/likebar.component';
     HeaderComponent,
     ClipcontrollerComponent,
     LikebarComponent,
+    UsertabComponent,
   ],
   bootstrap: [AppComponent],
 })
