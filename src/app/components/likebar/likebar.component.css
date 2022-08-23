@@ -11,6 +11,8 @@
   display: table; /* Allow the centering to work */
   padding: 0;
   margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .column {
@@ -44,5 +46,7 @@ p {
   padding-left: 8;
 }
 
-.hr {
+hr {
+  margin-left: 30px;
+  margin-right: 30px;
 }

@@ -1,0 +1,128 @@
+* {
+  color: white;
+}
+
+.usertab {
+  padding: 20px;
+}
+
+.table {
+  display: table; /* Allow the centering to work */
+  margin: 0;
+}
+
+.column {
+  float: left;
+}
+
+.rightcolumn {
+  float: right;
+  margin-right: 30px;
+}
+
+.columndescription {
+  margin: 0;
+}
+
+.button {
+  background-color: red;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+
+.clip {
+  float: right;
+}
+
+.userTopClips {
+  background-color: #7272722f;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+#username {
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+#followers {
+  font-size: 10px;
+  padding-left: 15px;
+}
+
+#followbutton {
+  font-size: 15px;
+  padding-left: 25px;
+}
+
+#description {
+  max-width: 50%;
+}
+
+#time {
+  text-align: left;
+}
+
+* {
+  color: white;
+}
+
+.navbar {
+  padding: 0;
+  width: 100%;
+}
+
+.table {
+  display: table; /* Allow the centering to work */
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.column {
+  max-height: 30px;
+  float: left;
+  padding: 0;
+}
+
+.columnarrow {
+  max-height: 30px;
+  float: left;
+  padding-right: 5px;
+}
+
+.columnviews {
+  max-height: 30px;
+  float: left;
+  padding-left: 50px;
+
+  padding-right: 5px;
+}
+
+#buttons {
+  float: right;
+  padding: 0;
+}
+
+p {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 8;
+}
+
+#topUserClip {
+  background-color: #72727231;
+  float: right;
+  padding-right: 50px;
+  margin-right: 50px;
+}
+
+#centered {
+  text-align: center;
+}
