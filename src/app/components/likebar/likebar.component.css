@@ -1,59 +1,48 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 * {
   color: white;
 }
 
-.navbar-brand {
-  padding: 10px;
-  text-align: left;
-}
-
-.navbar-menu {
-  text-align: right;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.topnav a {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav b {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a.active {
-  background-color: #04aa6d;
-  color: white;
+.navbar {
+  padding: 0;
+  width: 100%;
 }
 
 .table {
   display: table; /* Allow the centering to work */
-  margin: 0 auto;
+  padding: 0;
+  margin: 0;
 }
 
 .column {
+  max-height: 30px;
   float: left;
+  padding: 0;
+}
+
+.columnarrow {
+  max-height: 30px;
+  float: left;
+  padding-right: 5px;
+}
+
+.columnviews {
+  max-height: 30px;
+  float: left;
+  padding-left: 50px;
+
+  padding-right: 5px;
+}
+
+#buttons {
+  float: right;
+  padding: 0;
+}
+
+p {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 8;
+}
+
+.hr {
 }
