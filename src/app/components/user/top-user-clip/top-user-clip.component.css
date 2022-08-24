@@ -15,7 +15,6 @@
   float: left;
   padding: 10px;
   max-width: 45%;
-  margin-top: -50px;
 }
 
 .rightcolumn {
@@ -26,8 +25,9 @@
 #topUserClip {
   background-color: #72727231;
   padding: 10px;
-  margin-right: 70px;
-  max-width: 40%;
+  padding-bottom: 20px;
+  margin-right: 50px;
+  max-width: 50%;
 }
 
 #centered {

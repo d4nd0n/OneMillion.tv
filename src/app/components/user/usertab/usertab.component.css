@@ -3,12 +3,13 @@
 }
 
 .usertab {
-  padding: 20px;
+  padding-bottom: 30px;
 }
 
 .table {
   display: table; /* Allow the centering to work */
   margin: 0;
+  padding: 0;
 }
 
 .column {
@@ -37,8 +38,15 @@ p {
   margin: 0;
 }
 
+img {
+  padding: 0;
+  margin-left: 10px;
+  width: 80px;
+  height: 80px;
+}
+
 #username {
-  font-size: 20px;
+  font-size: 30px;
   padding-left: 15px;
 }
 
@@ -49,9 +57,13 @@ p {
 
 #followbutton {
   font-size: 15px;
-  padding-left: 25px;
+  padding-left: 70px;
 }
 
 #time {
   text-align: left;
+}
+
+#user {
+  padding-top: 10px;
 }

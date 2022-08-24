@@ -10,8 +10,7 @@ export class VideoComponent implements OnInit {
 
   ngOnInit() {}
   name = 'Video events';
-  videoSource =
-    'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4';
+  videoSource = '';
 
   @ViewChild('videoPlayer') videoplayer: any;
   public startedPlay: boolean = false;

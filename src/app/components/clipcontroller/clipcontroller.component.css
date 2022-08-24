@@ -1,5 +1,6 @@
 .table {
   display: table; /* Allow the centering to work */
+  padding-left: 5px;
 }
 
 .column {
@@ -11,4 +12,8 @@ p {
   text-align: center;
   color: white;
   margin: 0;
+}
+
+img {
+  padding-top: -20px;
 }
