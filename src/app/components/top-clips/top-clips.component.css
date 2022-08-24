@@ -1,20 +1,23 @@
-#top-clips {
-  float: center;
-  padding: 20px;
-  background-color: #000000;
-}
-
-#title {
+* {
   color: white;
-  text-align: center;
 }
-
 .table {
   display: table; /* Allow the centering to work */
-  margin: 0 auto;
 }
 
 .column {
   float: left;
-  padding: 40px;
+}
+
+hr {
+  max-width: 90%;
+}
+
+.topClips {
+  background-color: #72727231;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
 }

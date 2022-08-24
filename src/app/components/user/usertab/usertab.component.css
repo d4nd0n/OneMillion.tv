@@ -20,10 +20,6 @@
   margin-right: 30px;
 }
 
-.columndescription {
-  margin: 0;
-}
-
 .button {
   background-color: red;
   padding: 5px;
@@ -34,10 +30,6 @@
 
 .clip {
   float: right;
-}
-
-.userTopClips {
-  background-color: #7272722f;
 }
 
 p {
@@ -60,70 +52,6 @@ p {
   padding-left: 25px;
 }
 
-#description {
-  max-width: 50%;
-  padding-right: 50px;
-}
-
 #time {
   text-align: left;
-}
-
-* {
-  color: white;
-}
-
-.navbar {
-  padding: 0;
-  width: 100%;
-}
-
-.table {
-  display: table; /* Allow the centering to work */
-  padding: 0;
-  margin: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.column {
-  max-height: 30px;
-  float: left;
-  padding: 0;
-}
-
-.columnarrow {
-  max-height: 30px;
-  float: left;
-  padding-right: 5px;
-}
-
-.columnviews {
-  max-height: 30px;
-  float: left;
-  padding-left: 50px;
-
-  padding-right: 5px;
-}
-
-#buttons {
-  float: right;
-  padding: 0;
-}
-
-p {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 8;
-}
-
-#topUserClip {
-  background-color: #72727231;
-  float: right;
-  padding-right: 50px;
-  margin: 70px;
-}
-
-#centered {
-  text-align: center;
 }
