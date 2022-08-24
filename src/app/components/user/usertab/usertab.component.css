@@ -57,7 +57,8 @@ img {
 
 #followbutton {
   font-size: 15px;
-  padding-left: 70px;
+  padding-top: 10px;
+  padding-left: 200px;
 }
 
 #time {
@@ -66,4 +67,5 @@ img {
 
 #user {
   padding-top: 10px;
+  padding-left: 20px;
 }
