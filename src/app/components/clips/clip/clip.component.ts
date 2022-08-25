@@ -13,7 +13,6 @@ export class ClipComponent implements OnInit {
   }
 
   imagePath;
-
   clipLoad = (): void => {
     let loadtv = 'https://i.postimg.cc/mk3Ffj3V/tvstatic.gif';
     let orange = 'https://i.postimg.cc/c4JPKsTm/tv.png';
@@ -25,5 +24,3 @@ export class ClipComponent implements OnInit {
     }, 5000);
   };
 }
-
-
