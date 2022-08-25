@@ -22,6 +22,7 @@ import { LikebarComponent } from './components/likebar/likebar.component';
 import { UsertabComponent } from './components/user/usertab/usertab.component';
 import { TopUserClipComponent } from './components/user/top-user-clip/top-user-clip.component';
 import { ArrowDownComponent } from './components/buttons/arrow-down/arrow-down.component';
+import { SliderComponent } from './components/clips/slider/slider.component';
 
 @NgModule({
   imports: [
@@ -49,6 +50,7 @@ import { ArrowDownComponent } from './components/buttons/arrow-down/arrow-down.c
     UsertabComponent,
     TopUserClipComponent,
     ArrowDownComponent,
+    SliderComponent,
   ],
   bootstrap: [AppComponent],
 })
