@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { VideoComponent } from './components/video/video.component';
@@ -20,10 +21,15 @@ import { ClipcontrollerComponent } from './components/clips/clipcontroller/clipc
 import { LikebarComponent } from './components/likebar/likebar.component';
 import { UsertabComponent } from './components/user/usertab/usertab.component';
 import { TopUserClipComponent } from './components/user/top-user-clip/top-user-clip.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ArrowDownComponent } from './components/buttons/arrow-down/arrow-down.component';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+  ],
   declarations: [
     AppComponent,
     VideoComponent,
@@ -42,7 +48,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LikebarComponent,
     UsertabComponent,
     TopUserClipComponent,
-    BrowserAnimationsModule,
+    ArrowDownComponent,
   ],
   bootstrap: [AppComponent],
 })
