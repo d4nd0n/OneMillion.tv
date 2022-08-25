@@ -1,11 +1,16 @@
-<div class="box" *ngIf="isVisible; else elseBlock">
+<div class="box" *ngIf="show; else elseBlock">
   <div *ngFor="let clip of [0, 1, 2, 3, 4, 5, 6]">
     <app-clip></app-clip>
     <p>15:31:19 - 15:31:30</p>
   </div>
 </div>
 <ng-template #elseBlock>
-  <button mat-icon-button aria-label="Example icon-button with a heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button></ng-template
->
+  <div class="arrowBox">
+    <app-arrow-down></app-arrow-down>
+  </div>
+</ng-template>
+<table *ngIf="show">
+  <div class="arrowBox">
+    <app-arrow-down></app-arrow-down>
+  </div>
+</table>

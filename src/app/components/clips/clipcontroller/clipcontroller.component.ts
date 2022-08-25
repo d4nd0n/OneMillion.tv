@@ -11,5 +11,10 @@ export class ClipcontrollerComponent implements OnInit {
 
   ngOnInit() {}
 
-  isVisible = false;
+  show = false;
+
+  onClick() {
+    console.log(this.show);
+    this.show = !this.show;
+  }
 }

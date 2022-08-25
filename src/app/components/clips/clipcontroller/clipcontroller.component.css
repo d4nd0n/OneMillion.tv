@@ -4,6 +4,12 @@ p {
   margin: 0;
 }
 
+table {
+  display: table; /* Allow the centering to work */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .box {
   display: flex;
   align-items: center;
@@ -13,3 +19,16 @@ p {
 .box > * {
   flex: 1 1 200px;
 }
+
+.arrowBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: rgba(250, 235, 215, 0);
+  border: 0;
+}
+
+
