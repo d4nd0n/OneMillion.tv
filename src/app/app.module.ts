@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { VideoComponent } from './components/video/video.component';
 import { TopUsersBarComponent } from './components/top-users-bar/top-users-bar.component';
 import { TopClipsComponent } from './components/top-clips/top-clips.component';
@@ -27,7 +26,6 @@ import { TopUserClipComponent } from './components/user/top-user-clip/top-user-c
   declarations: [
     AppComponent,
     VideoComponent,
-    NavBarComponent,
     TopUsersBarComponent,
     TopClipsComponent,
     ClipComponent,
