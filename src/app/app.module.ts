@@ -20,7 +20,6 @@ import { ClipcontrollerComponent } from './components/clips/clipcontroller/clipc
 import { LikebarComponent } from './components/likebar/likebar.component';
 import { UsertabComponent } from './components/user/usertab/usertab.component';
 import { TopUserClipComponent } from './components/user/top-user-clip/top-user-clip.component';
-import { AngularMaterialModule } from './angular-material.module';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -42,8 +41,6 @@ import { AngularMaterialModule } from './angular-material.module';
     LikebarComponent,
     UsertabComponent,
     TopUserClipComponent,
-    // Import of the angular-material angular module
-    AngularMaterialModule,
   ],
   bootstrap: [AppComponent],
 })
