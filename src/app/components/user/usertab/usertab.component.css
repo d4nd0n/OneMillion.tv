@@ -16,6 +16,11 @@
   float: left;
 }
 
+.box {
+  display: flex;
+  justify-content: center;
+}
+
 .rightcolumn {
   float: right;
   margin-right: 30px;
