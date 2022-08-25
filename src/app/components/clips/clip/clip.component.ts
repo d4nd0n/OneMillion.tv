@@ -19,7 +19,6 @@ export class ClipComponent implements OnInit {
     this.imagePath = loadtv;
 
     setTimeout(() => {
-      console.log('CIAO');
       this.imagePath = orange;
     }, 5000);
   };
