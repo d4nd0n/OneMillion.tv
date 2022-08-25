@@ -1,5 +1,4 @@
 import { Component, ContentChildren, OnInit, QueryList } from '@angular/core';
-import { GalleryItem, ImageItem } from 'ng-gallery';
 
 import {
   animate,
@@ -31,8 +30,8 @@ import {
 export class ClipcontrollerComponent implements OnInit {
   state = 'show';
   constructor() {}
-  ngOnInit() {}
 
+  ngOnInit() {}
   changeState(newItem: string) {
     this.state = newItem == 'default' ? 'show' : 'hide';
   }
