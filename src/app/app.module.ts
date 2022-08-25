@@ -22,8 +22,9 @@ import { LikebarComponent } from './components/likebar/likebar.component';
 import { UsertabComponent } from './components/user/usertab/usertab.component';
 import { TopUserClipComponent } from './components/user/top-user-clip/top-user-clip.component';
 import { ArrowDownComponent } from './components/buttons/arrow-down/arrow-down.component';
-import { NgbdCarouselConfig } from './components/carousel-config/carousel-config';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { StarRatingComponent } from './components/star-rating/star-rating.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   imports: [
@@ -52,7 +53,8 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     UsertabComponent,
     TopUserClipComponent,
     ArrowDownComponent,
-    NgbdCarouselConfig,
+    CarouselComponent,
+    StarRatingComponent,
   ],
   bootstrap: [AppComponent],
 })
