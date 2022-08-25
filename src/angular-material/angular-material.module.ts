@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Imports of used components
 import {
-  MatButtonModule,
   MatInputModule,
   MatCardModule,
   MatToolbarModule,
@@ -16,7 +15,6 @@ import {
   imports: [
     CommonModule,
     BrowserAnimationsModule,
-    MatButtonModule,
     MatInputModule,
     MatCardModule,
     MatToolbarModule,
