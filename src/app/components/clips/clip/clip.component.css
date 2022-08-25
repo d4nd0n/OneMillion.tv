@@ -2,8 +2,8 @@
 }
 
 .clip :hover {
-  width: 250px;
-  height: 150px;
+  width: 215px;
+  height: 115px;
   border-radius: 5%;
   transition: width 0.5s ease, height 0.5s ease;
 }

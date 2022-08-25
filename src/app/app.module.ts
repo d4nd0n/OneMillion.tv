@@ -22,6 +22,7 @@ import { LikebarComponent } from './components/likebar/likebar.component';
 import { UsertabComponent } from './components/user/usertab/usertab.component';
 import { TopUserClipComponent } from './components/user/top-user-clip/top-user-clip.component';
 import { ArrowDownComponent } from './components/buttons/arrow-down/arrow-down.component';
+import { GalleryModule } from 'ng-gallery';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { ArrowDownComponent } from './components/buttons/arrow-down/arrow-down.c
     FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    GalleryModule,
   ],
   declarations: [
     AppComponent,
