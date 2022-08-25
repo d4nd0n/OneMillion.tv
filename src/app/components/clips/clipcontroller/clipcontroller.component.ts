@@ -16,13 +16,14 @@ import {
   styleUrls: ['./clipcontroller.component.css'],
   animations: [
     trigger('showState', [
+      state('hide', style({ opacity: 0, height: 0 })),
       transition('hide => show', [
-        animate(800, style({ transform: 'translateY(-100%)' })),
+        style({ opacity: 0, height: 0 }),
+        animate('300ms ease-in', style({ opacity: 1, height: '*' })),
       ]),
-
       transition('show => hide', [
-        style({ opacity: 0, width: 0 }),
-        animate('300ms ease-out', style({ opacity: 1, width: '*' })),
+        style({ opacity: 1, height: '*' }),
+        animate('300ms ease-out', style({ opacity: 0, height: 0 })),
       ]),
     ]),
   ],
