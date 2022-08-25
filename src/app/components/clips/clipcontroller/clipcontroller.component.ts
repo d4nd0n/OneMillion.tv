@@ -1,5 +1,6 @@
 import {
   animate,
+  stagger,
   state,
   style,
   transition,
@@ -14,10 +15,16 @@ import { ClipComponent } from '../clip/clip.component';
   styleUrls: ['./clipcontroller.component.css'],
   animations: [
     trigger('showState', [
-      state('show', style({ opacity: 1 })),
-      state('hide', style({ opacity: 0 })),
-      transition('show => hide', animate('400ms ease-out')),
-      transition('hide => show', animate('400ms ease-in')),
+      transition('hide => show', [
+        animate(800, style({ transform: 'translateY(-100%)' })),
+      ]),
+
+      transition('show => hide', [
+        style({ opacity: 0, width: 0 }),
+        stagger(50, [
+          animate('300ms ease-out', style({ opacity: 1, width: '*' })),
+        ]),
+      ]),
     ]),
   ],
 })
@@ -26,11 +33,11 @@ export class ClipcontrollerComponent implements OnInit {
 
   ngOnInit() {}
 
-  state = true;
+  state = 'show';
 
   onClick() {}
 
   changeState(newItem: string) {
-    this.state = newItem == 'default' ? true : false;
+    this.state = newItem == 'default' ? 'show' : 'hide';
   }
 }
