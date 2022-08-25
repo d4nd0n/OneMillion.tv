@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Output, EventEmitter } from '@angular/core';
 
 import {
   trigger,
@@ -14,9 +15,9 @@ import {
   styleUrls: ['./arrow-down.component.css'],
   animations: [
     trigger('rotatedState', [
-      state('default', style({ transform: 'rotate(0)' })),
-      state('rotated', style({ transform: 'rotate(-180deg)' })),
-      transition('rotated => default', animate('1500ms ease-out')),
+      state('default', style({ transform: 'rotateX(0)' })),
+      state('rotated', style({ transform: 'rotateX(-180deg)' })),
+      transition('rotated => default', animate('400ms ease-out')),
       transition('default => rotated', animate('400ms ease-in')),
     ]),
   ],
@@ -35,5 +36,12 @@ export class ArrowDownComponent implements OnInit {
 
   onClick() {
     this.rotate();
+    this.emit(this.state);
+  }
+
+  @Output() newItemEvent = new EventEmitter<string>();
+
+  emit(value: string) {
+    this.newItemEvent.emit(value);
   }
 }
