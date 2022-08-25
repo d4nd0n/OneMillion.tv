@@ -13,41 +13,27 @@ import {
   templateUrl: './arrow-down.component.html',
   styleUrls: ['./arrow-down.component.css'],
   animations: [
-    trigger('arrowState', [
-      state(
-        'show',
-        style({
-          opacity: 0,
-        })
-      ),
-      state(
-        'hide',
-        style({
-          opacity: 1,
-        })
-      ),
-      transition('show => hide', animate('600ms ease-out')),
-      transition('hide => show', animate('1000ms ease-in')),
+    trigger('rotatedState', [
+      state('default', style({ transform: 'rotate(0)' })),
+      state('rotated', style({ transform: 'rotate(-180deg)' })),
+      transition('rotated => default', animate('1500ms ease-out')),
+      transition('default => rotated', animate('400ms ease-in')),
     ]),
   ],
 })
 export class ArrowDownComponent implements OnInit {
   constructor() {}
 
-  show = false;
+  state: string = 'default';
   imagePath = 'https://i.postimg.cc/nzj2ZHmh/arrow-down.png';
 
   ngOnInit() {}
 
-  getStateName() {
-    return this.show ? 'show' : 'hide';
-  }
-
-  toggle() {
-    this.show = !this.show;
+  rotate() {
+    this.state = this.state === 'default' ? 'rotated' : 'default';
   }
 
   onClick() {
-    this.toggle();
+    this.rotate();
   }
 }
