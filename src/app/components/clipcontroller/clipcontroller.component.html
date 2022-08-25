@@ -1,4 +1,8 @@
 <div class="table">
+  <tr *ngFor="let clip of Clips; let i = index">
+    <td>{{ clip.name }}</td>
+  </tr>
+
   <div class="column">
     <div class="clip">
       <app-clip></app-clip>
@@ -18,11 +22,9 @@
     <p>15:31:19 - 15:31:30</p>
   </div>
   <div class="column">
-    <img
-      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAElBMVEX8/vz///8pKikAAAAtLS2Oj47hKWeDAAABEElEQVR4nO3PBxEDMRAAMZcLf8p5GuuRGGjdO+dhc9f97afNmr1ets86hm2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2Gfd9w9ttm3Tkvm/sHIDIKk6RLvD4AAAAASUVORK5CYII="
-      width="250"
-      height="150"
-    />
+    <div class="clip">
+      <app-clip></app-clip>
+    </div>
     <p>15:31:19 - 15:31:30</p>
   </div>
   <div class="column">
