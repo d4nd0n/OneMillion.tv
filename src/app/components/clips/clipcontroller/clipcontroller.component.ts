@@ -1,3 +1,6 @@
+import { Component, ContentChildren, OnInit, QueryList } from '@angular/core';
+import { ClipComponent } from '../clip/clip.component';
+
 import {
   animate,
   stagger,
@@ -6,8 +9,6 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
-import { Component, ContentChildren, OnInit, QueryList } from '@angular/core';
-import { ClipComponent } from '../clip/clip.component';
 
 @Component({
   selector: 'app-clipcontroller',
@@ -21,9 +22,7 @@ import { ClipComponent } from '../clip/clip.component';
 
       transition('show => hide', [
         style({ opacity: 0, width: 0 }),
-        stagger(50, [
-          animate('300ms ease-out', style({ opacity: 1, width: '*' })),
-        ]),
+        animate('300ms ease-out', style({ opacity: 1, width: '*' })),
       ]),
     ]),
   ],
