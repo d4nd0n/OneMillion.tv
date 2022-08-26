@@ -6,6 +6,7 @@
   border-radius: 0.2em;
   color: #ffffff;
   font-family: sans-serif;
+  height: auto;
 }
 
 .item-1 {
@@ -18,23 +19,21 @@
 
 .item-3 {
   padding: 25px;
+  height: auto;
 }
 
 .item-4 {
   padding: 40px;
 }
 
-.showDescription {
-}
-
 .longDescription {
-  height: var(--long--height);
-  opacity: var(--long--opacity);
+  height: var(--long-height);
+  opacity: var(--long-opacity);
 }
 
 .shortDescription {
-  height: var(--short--height);
-  opacity: var(--short--opacity);
+  height: var(--short-height);
+  opacity: var(--short-opacity);
 }
 
 .description {

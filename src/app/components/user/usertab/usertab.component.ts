@@ -15,16 +15,15 @@ export class UsertabComponent implements OnInit {
   showDescription() {
     this.descriptionState = this.descriptionState == 'long' ? 'short' : 'long';
     if (this.descriptionState == 'long') {
-      console.log(this.descriptionState);
       document.body.style.setProperty('--long-opacity', '1');
       document.body.style.setProperty('--long-height', '*');
       document.body.style.setProperty('--short-opacity', '0');
       document.body.style.setProperty('--short-height', '0');
     } else {
-      document.body.style.setProperty('--short-opacity', '1');
-      document.body.style.setProperty('--short-height', '*');
       document.body.style.setProperty('--long-opacity', '0');
       document.body.style.setProperty('--long-height', '0');
+      document.body.style.setProperty('--short-opacity', '1');
+      document.body.style.setProperty('--short-height', '*');
     }
   }
 }

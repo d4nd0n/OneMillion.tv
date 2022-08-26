@@ -1,39 +1,22 @@
-<div class="topClips">
-  <div class="table">
-    <b>Top Clips</b> <span layout="row"><hr flex /> </span>
-    <div id="row" class="column">
-      <div class="column">
-        <app-clip></app-clip>
-      </div>
-      <div class="column">
-        <app-clip></app-clip>
-      </div>
-      <div class="column">
-        <app-clip></app-clip>
-      </div>
-      <div class="column">
-        <app-clip></app-clip>
-      </div>
-      <div class="column">
-        <app-clip></app-clip>
-      </div>
-    </div>
-    <div id="row" class="column">
-      <div class="column">
-        <app-clip></app-clip>
-      </div>
-      <div class="column">
-        <app-clip></app-clip>
-      </div>
-      <div class="column">
-        <app-clip></app-clip>
-      </div>
-      <div class="column">
-        <app-clip></app-clip>
-      </div>
-      <div class="column">
-        <app-clip></app-clip>
+<div class="topClip">
+  <div class="title" fxLayoutAlign="start center">
+    <h1>Top Clips</h1>
+  </div>
+  <span layout="row"><hr flex /> </span>
+  <div class="container">
+    <div fxFlex fxLayout="column">
+      <div *ngFor="let clip of [0, 1]" fxFlex fxLayoutAlign="center center">
+        <div fxFlex fxLayout="row">
+          <div
+            *ngFor="let clip of [0, 1, 2, 3, 4]"
+            fxFlex
+            fxLayoutAlign="center center"
+          >
+            <div class="clip"><app-clip></app-clip></div>
+          </div>
+        </div>
       </div>
     </div>
+    <span layout="row"><hr flex /> </span>
   </div>
 </div>

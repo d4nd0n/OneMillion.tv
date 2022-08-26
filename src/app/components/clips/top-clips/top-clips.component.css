@@ -1,27 +1,17 @@
 * {
   color: white;
 }
-.table {
-  display: table; /* Allow the centering to work */
+
+.title {
+  margin-left: 20px;
 }
 
-.column {
-  float: left;
+.topClip {
+  background-color: #7272723f;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-hr {
-  max-width: 90%;
-}
-
-.topClips {
-  background-color: #72727231;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 30px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-#row {
-  padding-left: 50px;
+.clip {
+  padding: 5px;
 }
