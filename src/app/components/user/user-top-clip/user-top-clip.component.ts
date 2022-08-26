@@ -16,22 +16,33 @@ import {
   styleUrls: ['./user-top-clip.component.css'],
   animations: [
     trigger('showState', [
-      state('show', style({ opacity: 1, height: '*' })),
-      state('hide', style({ opacity: 1, height: '*' })),
+      transition('hide', [
+        query('.clipRow', [
+          style({ opacity: 0, height: 0 }),
+          stagger(30, [animate(0, style({ opacity: 0, height: 0 }))]),
+        ]),
+      ]),
+      transition('show', [
+        query('.clipRow', [
+          style({ opacity: 1, height: '*' }),
+          stagger(30, [animate(0, style({ opacity: 1, height: '*' }))]),
+        ]),
+      ]),
       transition('hide => show', [
         query('.clipRow', [
-          style({ opacity: 1, transform: 'translateY(-100px)' }),
+          style({ opacity: 0, height: 0 }),
           stagger(30, [
-            animate(
-              '500ms cubic-bezier(0.35, 0, 0.25, 1)',
-              style({ opacity: 1, transform: 'none' })
-            ),
+            animate('3.5s ease-in-out', style({ opacity: 1, height: '*' })),
           ]),
         ]),
       ]),
       transition('show => hide', [
-        style({ opacity: 0, height: '*' }),
-        animate('300ms ease-in', style({ opacity: 1, height: '*' })),
+        query('.clipRow', [
+          style({ opacity: 1, height: '*' }),
+          stagger(30, [
+            animate('3.5s ease-in-out', style({ opacity: 1, height: 0 })),
+          ]),
+        ]),
       ]),
     ]),
   ],
