@@ -25,7 +25,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { UserTopClipComponent } from './components/user/user-top-clip/user-top-clip.component';
-import { ClipUploadComponent } from './components/clips/clip/clip-upload/clip-upload.component';
+import { ClipUploadComponent } from './components/clips/clip-upload/clip-upload.component';
 
 @NgModule({
   imports: [
