@@ -20,6 +20,6 @@ export class ClipComponent implements OnInit {
 
     setTimeout(() => {
       this.imagePath = orange;
-    }, 5000);
+    }, 30000);
   };
 }
