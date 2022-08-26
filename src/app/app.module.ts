@@ -20,10 +20,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { ClipcontrollerComponent } from './components/clips/clipcontroller/clipcontroller.component';
 import { LikebarComponent } from './components/likebar/likebar.component';
 import { UsertabComponent } from './components/user/usertab/usertab.component';
-import { TopUserClipComponent } from './components/user/top-user-clip/top-user-clip.component';
 import { ArrowDownComponent } from './components/buttons/arrow-down/arrow-down.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
@@ -32,6 +32,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbCarouselModule,
+    FlexLayoutModule,
   ],
   declarations: [
     AppComponent,
@@ -50,7 +51,6 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     ClipcontrollerComponent,
     LikebarComponent,
     UsertabComponent,
-    TopUserClipComponent,
     ArrowDownComponent,
     CarouselComponent,
   ],

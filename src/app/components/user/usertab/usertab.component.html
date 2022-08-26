@@ -1,31 +1,88 @@
-<div class="usertab">
-  <div class="box">
-    <div id="user" class="column">
-      <div class="column">
-        <img
-          src="https://www.nicepng.com/png/full/128-1280406_view-user-icon-png-user-circle-icon-png.png"
-        />
+<div class="container">
+  <div fxLayout="row">
+    <div class="item item-1" fxLayout="row" fxLayoutAlign="start center" fxFlex>
+      <img
+        src="https://www.nicepng.com/png/full/128-1280406_view-user-icon-png-user-circle-icon-png.png"
+      />
+      <div fxLayout="column">
+        <p id="username">Username</p>
+        <p id="followers">1.450.000 Followers</p>
       </div>
-      <div class="column">
-        <div class="table"><p id="username">Username</p></div>
-        <div class="table"><p id="followers">1.450.000 Followers</p></div>
-      </div>
-      <div id="followbutton" class="column">
-        <div class="button"><p>Segui</p></div>
+      <div id="followbutton" fxLayout="column">
+        <b id="follow">Segui</b>
       </div>
     </div>
+    <div
+      class="item item-2"
+      fxFlex
+      fxLayout="column"
+      fxLayoutAlign="center end"
+    >
+      <app-clip></app-clip>
+      <p id="time">15:31:19 - 15:31:30 Uploaded in 25/07/2022</p>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="start start">
+    <div class="item item-3" fxFlex="45" fxLayout="row">
+      <section>
+        <p id="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          tristique bibendum dapibus. In eu eros iaculis, lobortis justo non,
+          varius metus. Morbi nisl urna, posuere non augue vel, lobortis tempus
+          nulla. Donec ut mollis ante. Mauris viverra, ex egestas elementum
+          ultricies, sapien erat sollicitudin dui, ac rhoncus justo massa sit
+          amet erat. Donec at interdum urna, ac porttitor ante. Aenean dolor
+          odio, vulputate id sodales eget, scelerisque in nulla. Suspendisse
+          mattis eu orci tempus pharetra. Maecenas non enim tortor. Integer ut
+          dignissim augue, eu ultricies nisl. Etiam tincidunt libero quis
+          tristique dapibus. Pellentesque gravida et lorem sed malesuada.
+        </p>
+        <p id="description">
+          Aliquam felis ipsum, convallis sed ornare sit amet, vehicula a nulla.
+          Proin porttitor fermentum posuere. Nullam sodales est sed tempus
+          consectetur. Phasellus rutrum dictum egestas. Sed euismod erat lorem,
+          id vestibulum ipsum feugiat eu. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia curae; Maecenas arcu
+          purus, lacinia nec tempor quis, suscipit sit amet tortor. Suspendisse
+          euismod egestas consectetur. Phasellus consectetur nisi cursus nisi
+          maximus, quis ullamcorper lacus semper. Proin vitae dolor in ex
+          lacinia malesuada.
+        </p>
 
-    <div class="box">
-      <div class="table">
-        <div class="clip">
-          <app-clip></app-clip>
+        <p id="description">
+          Sed scelerisque urna vel nunc mollis, in fringilla sapien pharetra.
+          Quisque v
+        </p>
+        <p id="description">Mostra altro ...</p>
+      </section>
+    </div>
+    <div
+      class="item item-4"
+      fxFlex="auto"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <div class="userTopClip">
+        <div fxLayout="row">
+          <b id="cliptitle">User's top clip</b>
         </div>
-      </div>
-      <div class="table">
-        <p id="time">15:31:19 - 15:31:30 Uploaded in 25/07/2022</p>
+        <span layout="row"><hr flex /> </span>
+        <div fxLayout="row">
+          <div fxLayout="column"><app-clip></app-clip></div>
+          <div fxLayout="column">
+            <section>
+              <p id="clipdesc">
+                Titolo del video che può essere abbastanza lungo
+              </p>
+              <p id="clipdesc">352.000</p>
+              <p id="clipdesc">145.000</p>
+              <p id="clipdesc">15:31:19 - 15:31:30</p>
+              <p id="clipdesc">Uploaded in 25/07/2022</p>
+            </section>
+          </div>
+        </div>
+        <span layout="row"><hr flex /> </span>
       </div>
     </div>
   </div>
-
-  <app-top-user-clip></app-top-user-clip>
 </div>
