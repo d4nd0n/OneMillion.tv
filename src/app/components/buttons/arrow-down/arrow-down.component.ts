@@ -8,6 +8,7 @@ import {
   animate,
   transition,
 } from '@angular/animations';
+import { ValueUnavailableKind } from '@angular/compiler-cli/src/ngtsc/reflection/src/host';
 
 @Component({
   selector: 'app-arrow-down',
@@ -35,6 +36,7 @@ export class ArrowDownComponent implements OnInit {
   }
 
   onClick() {
+    console.log('Emit:');
     this.rotate();
     this.emit(this.state);
   }
