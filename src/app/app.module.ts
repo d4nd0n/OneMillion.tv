@@ -24,6 +24,7 @@ import { ArrowDownComponent } from './components/buttons/arrow-down/arrow-down.c
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { UserTopClipComponent } from './components/user/user-top-clip/user-top-clip.component';
 
 @NgModule({
   imports: [
@@ -53,6 +54,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     UsertabComponent,
     ArrowDownComponent,
     CarouselComponent,
+    UserTopClipComponent,
   ],
   bootstrap: [AppComponent],
 })
