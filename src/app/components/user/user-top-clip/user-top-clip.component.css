@@ -13,6 +13,10 @@
   padding-left: 20px;
 }
 
-#clipRow {
+.firstRow {
+  padding: 10px;
+}
+
+.clipRow {
   padding: 10px;
 }
