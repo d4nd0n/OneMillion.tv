@@ -16,23 +16,11 @@ import {
   styleUrls: ['./user-top-clip.component.css'],
   animations: [
     trigger('showState', [
-      transition('hide', [
-        query('.clipRow', [
-          style({ opacity: 0, height: 0 }),
-          stagger(30, [animate(0, style({ opacity: 0, height: 0 }))]),
-        ]),
-      ]),
-      transition('show', [
-        query('.clipRow', [
-          style({ opacity: 1, height: '*' }),
-          stagger(30, [animate(0, style({ opacity: 1, height: '*' }))]),
-        ]),
-      ]),
       transition('hide => show', [
         query('.clipRow', [
           style({ opacity: 0, height: 0 }),
           stagger(30, [
-            animate('3.5s ease-in-out', style({ opacity: 1, height: '*' })),
+            animate('0.5s ease-in', style({ opacity: 1, height: '*' })),
           ]),
         ]),
       ]),
@@ -40,7 +28,7 @@ import {
         query('.clipRow', [
           style({ opacity: 1, height: '*' }),
           stagger(30, [
-            animate('3.5s ease-in-out', style({ opacity: 1, height: 0 })),
+            animate('0.5s ease-in-out', style({ opacity: 1, height: 0 })),
           ]),
         ]),
       ]),
@@ -55,5 +43,15 @@ export class UserTopClipComponent implements OnInit {
 
   changeState(newItem: string) {
     this.state = newItem == 'default' ? 'show' : 'hide';
+
+    if (this.state == 'show') {
+      document.body.style.setProperty('--rows-opacity', '1');
+      document.body.style.setProperty('--rows-height', '*');
+    } else {
+      setTimeout(() => {
+        document.body.style.setProperty('--rows-opacity', '0');
+        document.body.style.setProperty('--rows-height', '0');
+      }, 510);
+    }
   }
 }

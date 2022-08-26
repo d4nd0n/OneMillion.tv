@@ -24,6 +24,27 @@
   padding: 40px;
 }
 
+.showDescription {
+}
+
+.longDescription {
+  height: var(--long--height);
+  opacity: var(--long--opacity);
+}
+
+.shortDescription {
+  height: var(--short--height);
+  opacity: var(--short--opacity);
+}
+
+.description {
+  opacity: 1;
+}
+
+.longDescription {
+  opacity: 1;
+}
+
 img {
   padding: 5px;
   margin-bottom: 10px;

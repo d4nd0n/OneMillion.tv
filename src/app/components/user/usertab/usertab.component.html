@@ -23,8 +23,8 @@
     </div>
   </div>
   <div fxLayout="row" fxLayoutAlign="start start">
-    <div class="item item-3" fxFlex="45" fxLayout="row">
-      <section>
+    <div class="item item-3" fxFlex="45" fxLayout="column">
+      <section class="shortDescription">
         <p id="description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
           tristique bibendum dapibus. In eu eros iaculis, lobortis justo non,
@@ -53,7 +53,48 @@
           Sed scelerisque urna vel nunc mollis, in fringilla sapien pharetra.
           Quisque v
         </p>
-        <p id="description">Mostra altro ...</p>
+      </section>
+      <section class="longDescription">
+        <p id="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          lobortis viverra venenatis. Curabitur non ipsum tortor. Mauris eu eros
+          finibus nisi hendrerit tristique in sit amet tellus. Pellentesque quis
+          augue at felis gravida accumsan. Aenean lacus nulla, iaculis eget
+          turpis ut, accumsan rhoncus justo. Interdum et malesuada fames ac ante
+          ipsum primis in faucibus. Morbi et molestie ligula.
+        </p>
+        <p id="description">
+          Curabitur nisi ipsum, hendrerit in magna quis, dictum ullamcorper
+          nunc. Phasellus ullamcorper magna sagittis, porttitor justo ac,
+          commodo neque. Sed eget magna eu enim blandit hendrerit. Praesent
+          vestibulum luctus nunc a imperdiet. Aenean fermentum venenatis justo
+          eu venenatis. Fusce risus tortor, pellentesque at gravida eget,
+          accumsan id neque. In facilisis tincidunt velit aliquet fermentum.
+          Vivamus id dolor mauris. Curabitur tincidunt, lacus ac fringilla
+          eleifend, neque tortor rhoncus nunc, quis iaculis enim magna vel orci.
+          Suspendisse in posuere erat. Donec ornare, ex sit amet lobortis
+          egestas, est nulla ullamcorper diam, vitae fermentum eros turpis a mi.
+          Fusce molestie suscipit varius. In odio velit, dapibus a convallis ut,
+          faucibus et elit.
+        </p>
+        <p id="description">
+          Ut turpis nisl, dignissim non nisl iaculis, aliquam scelerisque augue.
+          Suspendisse interdum risus eget dui posuere, in tincidunt ante
+          viverra. Vivamus feugiat libero a faucibus rutrum. Aenean eu est
+          tellus. Suspendisse nisi metus, fringilla id volutpat nec, rhoncus
+          quis sapien. Nulla scelerisque fermentum accumsan. Sed a eleifend
+          dolor. Nulla facilisi. Nulla tempus rhoncus sapien, vel eleifend erat.
+          Morbi dapibus erat nec metus commodo lobortis. Mauris congue ornare
+          ante, vitae volutpat dui rhoncus sed. Duis et pretium velit.
+        </p>
+
+        <p id="description">
+          Sed scelerisque urna vel nunc mollis, in fringilla sapien pharetra.
+          Quisque v
+        </p>
+        <p class="showDescription" (click)="showDescription()">
+          Mostra altro ...
+        </p>
       </section>
     </div>
     <div

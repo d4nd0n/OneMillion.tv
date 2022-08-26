@@ -20,3 +20,8 @@
 .clipRow {
   padding: 10px;
 }
+
+.rows {
+  height: var(--rows-height);
+  opacity: var(--rows-opacity);
+}

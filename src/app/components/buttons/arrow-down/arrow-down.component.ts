@@ -16,8 +16,8 @@ import { ValueUnavailableKind } from '@angular/compiler-cli/src/ngtsc/reflection
   styleUrls: ['./arrow-down.component.css'],
   animations: [
     trigger('rotatedState', [
-      state('default', style({ transform: 'rotateX(0)' })),
-      state('rotated', style({ transform: 'rotateX(-180deg)' })),
+      state('default', style({ transform: 'rotateX(-180deg)' })),
+      state('rotated', style({ transform: 'rotateX(0)' })),
       transition('rotated => default', animate('400ms ease-out')),
       transition('default => rotated', animate('400ms ease-in')),
     ]),
