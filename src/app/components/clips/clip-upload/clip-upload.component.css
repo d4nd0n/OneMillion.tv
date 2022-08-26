@@ -5,7 +5,12 @@
 .clipUpload {
   padding-top: 100px;
 }
-
+.container {
+  flex-direction: row;
+}
+.item {
+  flex-grow: 4; /* default 0 */
+}
 #square {
   padding: 100px;
   border-radius: 4px;
@@ -15,8 +20,9 @@
 }
 #frame {
   background-color: #7272721f;
-  border-radius: 20px;
+  border-radius: 50px;
   padding: 80px;
+  width: 100%;
 }
 
 img {
@@ -27,4 +33,22 @@ img {
 #upload {
   padding-top: 10px;
   margin: 0;
+}
+
+#titleIn {
+  padding: 2px;
+  padding-left: 40%;
+  padding-right: 40%;
+  background-color: #72727294;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+#hashIn {
+  padding: 2px;
+  padding-left: 40%;
+  padding-right: 40%;
+  background-color: #72727294;
+  border-radius: 20px;
+  height: 100px;
 }
