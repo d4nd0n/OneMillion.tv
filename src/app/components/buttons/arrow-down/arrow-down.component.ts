@@ -36,7 +36,6 @@ export class ArrowDownComponent implements OnInit {
   }
 
   onClick() {
-    console.log('Emit:');
     this.rotate();
     this.emit(this.state);
   }

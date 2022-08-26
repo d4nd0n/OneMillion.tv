@@ -15,14 +15,8 @@ import {
   styleUrls: ['./user-top-clip.component.css'],
   animations: [
     trigger('showState', [
-      transition('hide => show', [
-        style({ opacity: 0, height: 0 }),
-        animate('300ms ease-in', style({ opacity: 1, height: '*' })),
-      ]),
-      transition('show => hide', [
-        style({ opacity: 1, height: '*' }),
-        animate('300ms ease-out', style({ opacity: 0, height: 0 })),
-      ]),
+      transition('hide => show', []),
+      transition('show => hide', []),
     ]),
   ],
 })
@@ -33,7 +27,6 @@ export class UserTopClipComponent implements OnInit {
   ngOnInit() {}
 
   changeState(newItem: string) {
-    console.log(newItem);
     this.state = newItem == 'default' ? 'show' : 'hide';
   }
 }
