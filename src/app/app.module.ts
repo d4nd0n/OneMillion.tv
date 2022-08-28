@@ -26,6 +26,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { UserTopClipComponent } from './components/user/user-top-clip/user-top-clip.component';
 import { ClipUploadComponent } from './components/clips/clip-upload/clip-upload.component';
+import { TestComponentComponent } from './components/test-component/test-component.component';
 
 @NgModule({
   imports: [
@@ -57,6 +58,7 @@ import { ClipUploadComponent } from './components/clips/clip-upload/clip-upload.
     CarouselComponent,
     UserTopClipComponent,
     ClipUploadComponent,
+    TestComponentComponent,
   ],
   bootstrap: [AppComponent],
 })
