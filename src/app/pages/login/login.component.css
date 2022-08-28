@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  max-width: 70%;
 }
 
 .item-register {
@@ -99,9 +100,6 @@ span.psw {
   padding: 10px;
 }
 
-#registerbtn {
-  width: 90%;
-}
 #onemillion {
   padding-top: 20px;
   text-align: center;

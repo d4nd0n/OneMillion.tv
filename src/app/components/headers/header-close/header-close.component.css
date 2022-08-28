@@ -1,14 +1,12 @@
 .navbar {
   background-color: var(--navbar-scroll);
   transition: background-color 1s ease;
-  color: var(--navbar-scroll-text);
   -webkit-box-shadow: var(--navbar-scroll-shadow);
   box-shadow: var(--navbar-scroll-shadow);
-  position: fixed;
-  z-index: 1;
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
+  color: white;
 }
 
 .item-brand {

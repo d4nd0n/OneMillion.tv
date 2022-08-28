@@ -1,7 +1,23 @@
-.box {
+.frame {
   background-color: #1b1b1b;
 }
 
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.container-controller {
+  flex-flow: row wrap;
+  flex-grow: 2;
+}
+
+.container-arrow {
+  flex-grow: 1;
+}
 p {
   text-align: center;
   color: white;
@@ -12,21 +28,6 @@ table {
   display: table; /* Allow the centering to work */
   margin-left: auto;
   margin-right: auto;
-}
-
-.box {
-  display: flex;
-  justify-content: center;
-}
-
-.box > * {
-  flex: 1 1 200px;
-}
-
-.arrowBox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 button {
