@@ -2,51 +2,43 @@
   color: white;
 }
 
-.navbar {
-  padding: 0;
-  width: 100%;
+.container {
+  display: flex;
+  flex-flow: row no-wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-grow: 2;
 }
-
-.table {
-  display: table; /* Allow the centering to work */
-  padding: 0;
-  margin: 0;
-  margin-left: 20px;
-  margin-right: 20px;
+.container-1 {
+  justify-content: center;
+  flex-grow: 1;
 }
-
-.column {
-  max-height: 30px;
-  float: left;
-  padding: 0;
+.container-2 {
+  justify-content: flex-end;
 }
-
-.columnarrow {
-  max-height: 30px;
-  float: left;
-  padding-right: 5px;
+.item {
+  border-radius: 5px;
+  margin: 10px;
 }
-
-.columnviews {
-  max-height: 30px;
-  float: left;
-  padding-left: 50px;
-
-  padding-right: 5px;
+.item-like {
 }
-
-#buttons {
-  float: right;
-  padding: 0;
+.item-eye {
+  flex-grow: 1;
+}
+.item-button a {
+  padding-right: 20px;
 }
 
 p {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 8;
+  margin: 0;
+  padding: 0;
 }
 
 hr {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 0;
+}
+
+.icon {
+  transform: scale(3);
 }

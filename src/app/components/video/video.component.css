@@ -1,6 +1,19 @@
-.popup {
-  max-width: 1920px;
-  max-height: 1080px;
+.tv {
+  background-color: black;
+}
+.container {
+  display: flex;
+  flex-flow: row no-wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.container-video {
+}
+
+.item-video {
+  width: 100%;
 }
 
 video {

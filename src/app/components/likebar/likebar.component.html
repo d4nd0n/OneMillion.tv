@@ -1,58 +1,24 @@
-<span layout="row"><hr flex /> </span>
-
-<div class="navbar">
-  <div class="table">
-    <div class="column">
-      <div class="likes">
-        <div class="table">
-          <div class="columnarrow">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Octicons-arrow-up.svg"
-              width="30"
-              height="30"
-            />
-          </div>
-          <div class="columnarrow">
-            <img
-              src="https://fornitoreerbalegale.it/wp-content/uploads/2018/02/arrow-down-a_icon-icons.com_50480.png"
-              width="30"
-              height="30"
-            />
-          </div>
-          <div class="column">
-            <p>145.000</p>
-          </div>
-          <div class="columnviews">
-            <img
-              src="https://www.svgrepo.com/show/26260/eye.svg"
-              width="30"
-              height="30"
-            />
-          </div>
-          <div class="column">
-            <p>145.000</p>
-          </div>
-        </div>
-      </div>
+<div class="container">
+  <div class="container container-1">
+    <div class="item item-like">
+      <a routerLink="/cart"
+        ><mat-icon class="icon upArrowIcon">arrow_drop_up</mat-icon>
+      </a>
+      <a routerLink="/cart"
+        ><mat-icon class="icon downArrowIcon">arrow_drop_down</mat-icon>
+      </a>
+      140.000
     </div>
-    <div class="column" id="buttons">
-      <div class="views">
-        <div class="table">
-          <div class="table">
-            <div class="column">
-              <p>Share</p>
-            </div>
-            <div class="column">
-              <p>Download</p>
-            </div>
-            <div class="column">
-              <p>Save</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="item item-eye">
+      <a routerLink="/cart"><mat-icon>remove_red_eye</mat-icon> </a>
+      145.000
+    </div>
+  </div>
+  <div class="container container-2">
+    <div class="item item-button">
+      <a routerLink="/cart"><mat-icon>share</mat-icon> </a>
+      <a routerLink="/cart"><mat-icon>save</mat-icon> </a>
+      <a routerLink="/cart"><mat-icon>bookmark</mat-icon> </a>
     </div>
   </div>
 </div>
-
-<span layout="row"><hr flex /> </span>

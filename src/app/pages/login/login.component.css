@@ -1,6 +1,17 @@
-/* Bordered form */
-form {
-  background-color: #e8e8e8;
+* {
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.item-register {
+  margin-top: 20px;
 }
 
 /* Full-width inputs */
@@ -10,9 +21,10 @@ input[type='password'] {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #6b6b6b;
   box-sizing: border-box;
   border-radius: 10px;
+  background-color: #6b6b6b;
 }
 
 /* Set a style for all buttons */
@@ -49,10 +61,9 @@ button:hover {
   padding: 110px;
 }
 
-.login {
+.item-login {
   padding: 60px;
-  background-color: #f5f5f5;
-  border: 1px solid #000000;
+  background-color: rgba(114, 114, 114, 0.1);
   border-radius: 25px;
 }
 
@@ -107,6 +118,6 @@ h2 {
   margin: 10px 0 20px;
 }
 h2 span {
-  background-color: #e8e8e8;
+  background-color: rgba(46, 46, 46, 1);
   padding: 0 10px;
 }

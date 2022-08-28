@@ -1,0 +1,38 @@
+.navbar {
+  background-color: var(--navbar-scroll);
+  transition: background-color 1s ease;
+  color: var(--navbar-scroll-text);
+  -webkit-box-shadow: var(--navbar-scroll-shadow);
+  box-shadow: var(--navbar-scroll-shadow);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.item-brand {
+  flex-grow: 2;
+}
+
+nav a {
+  color: inherit;
+  padding-right: 35px;
+}
+
+nav a:hover {
+  color: #dadada;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  padding: 0;
+}
+
+p {
+  font-size: medium;
+}

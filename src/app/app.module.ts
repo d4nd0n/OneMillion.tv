@@ -31,6 +31,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   imports: [
@@ -44,6 +45,8 @@ import { MatRadioModule } from '@angular/material/radio';
     MatInputModule,
     MatButtonModule,
     MatRadioModule,
+    MatIconModule,
+    BrowserModule,
   ],
   declarations: [
     AppComponent,
