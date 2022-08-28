@@ -13,3 +13,5 @@ ngb-carousel .wrapper > img {
   bottom: 0;
   right: 0;
 }
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';

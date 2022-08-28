@@ -27,6 +27,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { UserTopClipComponent } from './components/user/user-top-clip/user-top-clip.component';
 import { ClipUploadComponent } from './components/clips/clip-upload/clip-upload.component';
 import { TestComponentComponent } from './components/test-component/test-component.component';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   imports: [
@@ -36,6 +40,10 @@ import { TestComponentComponent } from './components/test-component/test-compone
     BrowserAnimationsModule,
     NgbCarouselModule,
     FlexLayoutModule,
+    MatDividerModule,
+    MatInputModule,
+    MatButtonModule,
+    MatRadioModule,
   ],
   declarations: [
     AppComponent,

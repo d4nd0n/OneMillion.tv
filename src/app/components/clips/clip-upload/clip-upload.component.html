@@ -1,31 +1,176 @@
-<div class="clipUpload">
-  <div class="container" fxFlex fxLayoutAlign="center center">
-    <div fxFlex fxLayout="column" fxLayoutAlign="center center">
-      <div id="frame" fxLayoutAlign="center center">
-        <div id="square" fxLayoutAlign="center center">
-          <div fxLayout="column" fxLayoutAlign="center center">
-            <img src="https://i.postimg.cc/VN5P5ndq/upload.png" />
-            <p id="upload">Upload your clip!</p>
-          </div>
+<div class="container">
+  <div class="container container-1">
+    <div class="item item-upload">
+      <img src="https://i.postimg.cc/VN5P5ndq/upload.png" />
+      <p id="upload">Upload your clip!</p>
+    </div>
+  </div>
+  <div class="container container-2">
+    <div class="container container-title-text">
+      <div class="item item-video"><app-video></app-video></div>
+      <div class="item item-text-1">
+        <div class="item item-title">
+          <p>Title</p>
+        </div>
+        <div class="item item-hashtag">
+          <p>Hashtag</p>
         </div>
       </div>
-      <div fxFlex fxLayout="column" fxLayoutAlign="center center">
-        <div id="frame" fxLayoutAlign="center center">
-          <div fxLayout="column" fxLayoutAlign="center center">
-            <div class="item" fxFlex fxLayout="row" fxLayoutAlign="start start">
-              AAAAAAAAAAa
-              <div fxFlex fxLayout="column" fxLayoutAlign="center center">
-                <div id="titleIn">Title</div>
-                <div id="hashIn">Hashtag</div>
-              </div>
-            </div>
-            <div fxLayout="row" fxLayoutAlign="center center">
-              <div class="item" id="otherIn">Altre cose</div>
-              <div class="item" id="description">Description</div>
-            </div>
-          </div>
+    </div>
+    <div class="container container-time">
+      <div class="item item-time">Time</div>
+    </div>
+    <div class="container container-other-text">
+      <div class="item item-other">Altre cose</div>
+      <div class="item item-description">Description</div>
+    </div>
+    <div class="container container-send">
+      <div class="item item-send">
+        <button mat-flat-button color="primary">Send</button>
+      </div>
+    </div>
+  </div>
+  <div class="container container-3">
+    <div class="container container-title-text">
+      <div class="item item-video"><app-video></app-video></div>
+      <div class="item item-text-1">
+        <div class="item item-title">
+          <p>Title</p>
+        </div>
+        <div class="item item-hashtag">
+          <p>Hashtag</p>
         </div>
       </div>
+    </div>
+    <div class="container container-send">
+      <div class="item item-send">
+        <button mat-flat-button color="primary">Add to cart</button>
+      </div>
+    </div>
+    <div class="container container-nft" *ngFor="let item of [0, 1, 2, 3, 4]">
+      <div class="item item-nft">
+        <p>Nft Name</p>
+      </div>
+      <div class="item item-nft">
+        <p>12:04:00</p>
+      </div>
+      <div class="item item-nft">
+        <p>1€</p>
+      </div>
+    </div>
+    <br />
+    <mat-divider [inset]="true" style="color:white"></mat-divider>
+    <br />
+    <div class="container container-nft">
+      <div class="item item-nft">
+        <p>Clip Name</p>
+      </div>
+      <div class="item item-nft">
+        <p>12:04:00-12:04:14</p>
+      </div>
+      <div class="item item-nft">
+        <p>15€</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container container-4">
+  <div class="container container-title-cart">
+    <div class="item item-text-2">
+      <h1>Cart</h1>
+      <p>2 articoli</p>
+    </div>
+  </div>
+  <div class="container container-cart" *ngFor="let item of [0, 1, 2, 3, 4]">
+    <div class="item item-cart-img">
+      <img id="clipImg" src="https://i.postimg.cc/c4JPKsTm/tv.png" />
+    </div>
+    <div class="item item-cart-name">
+      <p>Clip name - 15 secondi</p>
+      <p>Bin</p>
+    </div>
+    <div class="item item-cart-price">
+      <div class="item item-cart-price">
+        <p>15€</p>
+        <h3>14€</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container container-cart-total">
+    <div class="item item-cart-total">
+      <p>Subtotal</p>
+      <p>Discount</p>
+      <p>Total</p>
+    </div>
+    <div class="item item-cart-total">
+      <p>30,00€</p>
+      <p>10,00€</p>
+      <p>20,00€</p>
+    </div>
+  </div>
+  <div class="container container-send">
+    <div class="item item-send">
+      <button mat-flat-button color="primary">Checkout</button>
+    </div>
+  </div>
+</div>
+
+<div class="container container-5">
+  <div class="container container-pay-cart">
+    <div class="item item-text-2">
+      <h1>Payment</h1>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">New Card</mat-radio-button>
+        <mat-radio-button value="2">Paypal</mat-radio-button>
+      </mat-radio-group>
+    </div>
+  </div>
+  <div class="container container-pay-input">
+    <div class="item item-cart-input">
+      <div class="item item-cart-input">
+        <p>CardNumber</p>
+        <div class="item item-input">
+          <p>4111 1111 1111 1111</p>
+        </div>
+      </div>
+      <div class="item item-cart-input">
+        <p>Expiration Date</p>
+        <div class="item item-input">
+          <p>4111 1111 1111 1111</p>
+        </div>
+      </div>
+    </div>
+    <div class="item item-cart-input">
+      <div class="item item-cart-input">
+        <p>Postal Code</p>
+        <div class="item item-input">
+          <p>4111 1111 1111 1111</p>
+        </div>
+      </div>
+      <div class="item item-cart-input">
+        <p>CVV</p>
+        <div class="item item-input">
+          <p>4111 1111 1111 1111</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container container-pay-total">
+    <div class="item item-cart-total">
+      <p>Subtotal</p>
+      <p>Discount</p>
+      <p>Total</p>
+    </div>
+    <div class="item item-cart-total">
+      <p>30,00€</p>
+      <p>10,00€</p>
+      <p>20,00€</p>
+    </div>
+  </div>
+  <div class="container container-send">
+    <div class="item item-send">
+      <button mat-flat-button color="primary">Checkout</button>
     </div>
   </div>
 </div>
