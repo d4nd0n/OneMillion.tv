@@ -16,7 +16,7 @@ import { ClipsComponent } from './pages/clips/clips.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CartComponent } from './pages/cart/cart.component';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './components/headers/header/header.component';
 import { ClipcontrollerComponent } from './components/clips/clipcontroller/clipcontroller.component';
 import { LikebarComponent } from './components/likebar/likebar.component';
 import { UsertabComponent } from './components/user/usertab/usertab.component';
@@ -32,6 +32,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatIconModule } from '@angular/material/icon';
+import { HeaderCloseComponent } from './components/headers/header-close/header-close.component';
 
 @NgModule({
   imports: [
@@ -70,6 +71,7 @@ import { MatIconModule } from '@angular/material/icon';
     UserTopClipComponent,
     ClipUploadComponent,
     TestComponentComponent,
+    HeaderCloseComponent,
   ],
   bootstrap: [AppComponent],
 })
