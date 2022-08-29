@@ -1,62 +1,43 @@
 .container {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-.container-user-bar {
-  flex-direction: row;
-  flex-wrap: nowrap;
-  background-color: aquamarine;
+.container-user-tab {
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
 }
-.container-user {
-  flex-direction: row;
-}
-.container-user-head {
+.container-user-clip {
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.item {
-  border-radius: 0.2em;
-  color: #ffffff;
-  font-family: sans-serif;
-  height: auto;
+.item-img {
 }
 .item-user {
-  flex-flow: row nowrap;
+  margin-left: 20px;
+}
+.item-button {
+  background-color: red;
+  border-radius: 5px;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 170px;
+}
+.item-clip-head {
+  padding-top: 15px;
+}
+.item-space {
   flex-grow: 2;
 }
-
-.item-1 {
-  padding-left: 15px;
-  padding-bottom: 20px;
-}
-
-.item-2 {
-}
-
-.item-3 {
-  padding: 25px;
-  height: auto;
-}
-
-.item-4 {
-  padding: 40px;
-}
-
-.longDescription {
-  height: var(--long-height);
-  opacity: var(--long-opacity);
-}
-
-.shortDescription {
-  height: var(--short-height);
-  opacity: var(--short-opacity);
-}
-
-.description {
-  opacity: 1;
-}
-
-.longDescription {
-  opacity: 1;
+.item-description {
+  background-color: dimgray;
 }
 
 img {
@@ -66,50 +47,7 @@ img {
   height: 80px;
 }
 
-section {
-  margin-top: -20px;
-}
-
-#followbutton {
-  background-color: red;
-  border-radius: 5px;
-  margin-left: 190px;
-  font-size: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-#username {
-  font-size: 25px;
+p {
+  padding: 0;
   margin: 0;
-  margin-left: 10px;
-}
-
-#followers {
-  font-size: 12px;
-  margin-left: 10px;
-}
-
-#time {
-  font-size: 15px;
-}
-
-#description {
-  font-size: 15px;
-}
-
-#cliptitle {
-  font-size: 25px;
-}
-
-#clipdesc {
-  padding-top: 17px;
-}
-
-#clipdesc p {
-  font-size: 13px;
-  margin: 0;
-  padding-left: 20px;
 }

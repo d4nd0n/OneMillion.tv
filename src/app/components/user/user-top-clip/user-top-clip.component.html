@@ -1,25 +1,72 @@
 <div class="container">
-  <div class="container container-description"></div>
+  <div class="container container-description">
+    <div class="item item-description">
+      <p id="shortDescription">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget
+        placerat elit. Maecenas vel metus massa. Nulla mattis tortor in iaculis
+        aliquet. Curabitur tempor dapibus ligula at accumsan. In fermentum lorem
+        ut porta iaculis. Aliquam molestie ipsum consectetur sapien porttitor
+        elementum. Ut nunc velit, semper eu mattis quis, gravida et lorem.
+        Suspendisse eleifend, quam quis rutrum ullamcorper, nisi tellus faucibus
+        felis, at commodo eros sem vitae libero. Pellentesque pretium cursus
+        est, et efficitur risus maximus id. Duis dapibus hendrerit ante. Cras
+        faucibus risus semper purus iaculis, a vulputate felis facilisis. Nunc
+        nibh dui, facilisis vulputate nibh et, venenatis fringilla ipsum. Nunc
+        dapibus lorem quis magna elementum, eu auctor erat sagittis. Vestibulum
+        nec porta sapien, sit amet accumsan risus.
+      </p>
+      <p id="longDescription">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget
+        placerat elit. Maecenas vel metus massa. Nulla mattis tortor in iaculis
+        aliquet. Curabitur tempor dapibus ligula at accumsan. In fermentum lorem
+        ut porta iaculis. Aliquam molestie ipsum consectetur sapien porttitor
+        elementum. Ut nunc velit, semper eu mattis quis, gravida et lorem.
+        Suspendisse eleifend, quam quis rutrum ullamcorper, nisi tellus faucibus
+        felis, at commodo eros sem vitae libero. Pellentesque pretium cursus
+        est, et efficitur risus maximus id. Duis dapibus hendrerit ante. Cras
+        faucibus risus semper purus iaculis, a vulputate felis facilisis. Nunc
+        nibh dui, facilisis vulputate nibh et, venenatis fringilla ipsum. Nunc
+        dapibus lorem quis magna elementum, eu auctor erat sagittis. Vestibulum
+        nec porta sapien, sit amet accumsan risus. Donec gravida arcu nec purus
+        placerat convallis. Sed vel massa a leo lobortis tincidunt. Nunc
+        vehicula est at felis mollis dapibus. Aenean aliquet elit a est rutrum
+        consectetur. Maecenas in risus massa. Fusce feugiat leo eu purus blandit
+        accumsan. Cras interdum a sem nec elementum. Nam consectetur efficitur
+        metus non mattis. Cras at justo eget tortor vehicula ultrices. Aliquam
+        libero lectus, ullamcorper eu felis vel, lacinia finibus arcu. Vivamus
+        id ligula tincidunt urna auctor maximus eu quis sem. Etiam bibendum,
+        massa nec sodales gravida, magna arcu iaculis ligula, ac vestibulum
+        nulla sem ut purus. Aliquam aliquam vel est a volutpat. Mauris ut nibh
+        eleifend, feugiat felis at, lacinia massa. Morbi placerat lacinia
+        porttitor. Vivamus congue eleifend nisi ut cursus. Etiam auctor, enim a
+        convallis pharetra, magna est dapibus ipsum, non congue lorem arcu sed
+        nisl. Fusce gravida nulla at sem lacinia tempor. Praesent non augue at
+        dui posuere feugiat. Aliquam maximus vitae ex a pellentesque. Mauris
+        dolor elit, hendrerit quis risus aliquam, luctus consequat mi. Sed elit
+        felis, facilisis quis volutpat sed, mollis gravida nisl. Vivamus
+        ultrices at nunc quis faucibus. Curabitur sit amet odio lorem. Etiam
+        libero lectus, condimentum nec condimentum quis, facilisis et odio.
+        Mauris pharetra elementum orci. Cras pellentesque, dolor sed condimentum
+        mollis, lorem nisl iaculis nibh, tempus sodales tellus turpis id dolor.
+        Morbi viverra nisl tellus, in sodales lorem commodo id. Cras a lorem eu
+        dui lacinia aliquet vel eu tortor. Quisque porta, leo at varius rutrum,
+        libero turpis maximus urna, vitae dapibus nunc velit a elit. Vestibulum
+        ac odio eget augue faucibus feugiat sed non lacus. Mauris hendrerit
+        facilisis nisi, eget faucibus ex ultricies a. Mauris a lorem at lorem
+        mattis feugiat.
+      </p>
+    </div>
+  </div>
+  <div class="container container-space">
+    <div class="item item-space"></div>
+  </div>
+
   <div class="container container-userTopClip" [@showState]="state">
-    <div class="item item-title">
-      <b>User's top clip</b>
-      <mat-divider></mat-divider>
-    </div>
-    <div class="container container-clip-row">
-      <div class="item item-clip">
-        <app-clip></app-clip>
+    <div class="container container-top-frame">
+      <div class="item item-title">
+        <b>User's top clip</b>
+        <mat-divider></mat-divider>
       </div>
-      <div class="item item-desc">
-        <section id="clipdesc">
-          <p>Titolo del video che può essere abbastanza lungo</p>
-          <p>352.000</p>
-          <p>145.000</p>
-          <p>15:31:19 - 15:31:30</p>
-          <p>Uploaded in 25/07/2022</p>
-        </section>
-      </div>
-    </div>
-    <div class="rows" *ngFor="let clip of [0, 1, 2, 3, 4]">
       <div class="container container-clip-row">
         <div class="item item-clip">
           <app-clip></app-clip>
@@ -34,10 +81,26 @@
           </section>
         </div>
       </div>
-    </div>
-    <div class="item item-arrow">
-      <mat-divider></mat-divider>
-      <app-arrow-down (newItemEvent)="changeState($event)"></app-arrow-down>
+      <div class="rows" *ngFor="let clip of [0, 1, 2, 3, 4, 5, 6]">
+        <div class="container container-clip-row">
+          <div class="item item-clip">
+            <app-clip></app-clip>
+          </div>
+          <div class="item item-desc">
+            <section id="clipdesc">
+              <p>Titolo del video che può essere abbastanza lungo</p>
+              <p>352.000</p>
+              <p>145.000</p>
+              <p>15:31:19 - 15:31:30</p>
+              <p>Uploaded in 25/07/2022</p>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="item item-arrow">
+        <mat-divider></mat-divider>
+        <app-arrow-down (newItemEvent)="changeState($event)"></app-arrow-down>
+      </div>
     </div>
   </div>
 </div>

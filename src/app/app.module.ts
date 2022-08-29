@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { VideoComponent } from './components/video/video.component';
-import { TopUsersBarComponent } from './components/top-users-bar/top-users-bar.component';
 import { TopClipsComponent } from './components/clips/top-clips/top-clips.component';
 import { ClipComponent } from './components/clips/clip/clip.component';
 import { ShopComponent } from './components/shop/shop.component';
@@ -52,7 +51,6 @@ import { HeaderCloseComponent } from './components/headers/header-close/header-c
   declarations: [
     AppComponent,
     VideoComponent,
-    TopUsersBarComponent,
     TopClipsComponent,
     ClipComponent,
     ShopComponent,
