@@ -1,5 +1,16 @@
 .container {
-  max-width: 1920px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.container-user-bar {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: aquamarine;
+}
+.container-user {
+  flex-direction: row;
+}
+.container-user-head {
 }
 
 .item {
@@ -7,6 +18,10 @@
   color: #ffffff;
   font-family: sans-serif;
   height: auto;
+}
+.item-user {
+  flex-flow: row nowrap;
+  flex-grow: 2;
 }
 
 .item-1 {

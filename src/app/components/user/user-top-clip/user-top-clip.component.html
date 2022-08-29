@@ -1,24 +1,15 @@
-<div [@showState]="state" class="userTopClip">
-  <div fxLayout="row" fxLayoutAlign="center center">
-    <b id="clipTitle">User's top clip</b>
-  </div>
-  <span layout="row"><hr flex /> </span>
-  <div class="firstRow" fxLayoutAlign="center center" fxLayout="row">
-    <div fxLayout="column"><app-clip></app-clip></div>
-    <div fxLayout="column">
-      <section id="clipdesc">
-        <p>Titolo del video che può essere abbastanza lungo</p>
-        <p>352.000</p>
-        <p>145.000</p>
-        <p>15:31:19 - 15:31:30</p>
-        <p>Uploaded in 25/07/2022</p>
-      </section>
+<div class="container">
+  <div class="container container-description"></div>
+  <div class="container container-userTopClip" [@showState]="state">
+    <div class="item item-title">
+      <b>User's top clip</b>
+      <mat-divider></mat-divider>
     </div>
-  </div>
-  <div class="rows" *ngFor="let clip of [0, 1, 2, 3, 4]">
-    <div class="clipRow" fxLayoutAlign="center center" fxLayout="row">
-      <div fxLayout="column"><app-clip></app-clip></div>
-      <div fxLayout="column">
+    <div class="container container-clip-row">
+      <div class="item item-clip">
+        <app-clip></app-clip>
+      </div>
+      <div class="item item-desc">
         <section id="clipdesc">
           <p>Titolo del video che può essere abbastanza lungo</p>
           <p>352.000</p>
@@ -28,10 +19,25 @@
         </section>
       </div>
     </div>
-  </div>
-
-  <span layout="row"><hr flex /> </span>
-  <div id="arrowDown" fxLayoutAlign="center center">
-    <app-arrow-down (newItemEvent)="changeState($event)"></app-arrow-down>
+    <div class="rows" *ngFor="let clip of [0, 1, 2, 3, 4]">
+      <div class="container container-clip-row">
+        <div class="item item-clip">
+          <app-clip></app-clip>
+        </div>
+        <div class="item item-desc">
+          <section id="clipdesc">
+            <p>Titolo del video che può essere abbastanza lungo</p>
+            <p>352.000</p>
+            <p>145.000</p>
+            <p>15:31:19 - 15:31:30</p>
+            <p>Uploaded in 25/07/2022</p>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="item item-arrow">
+      <mat-divider></mat-divider>
+      <app-arrow-down (newItemEvent)="changeState($event)"></app-arrow-down>
+    </div>
   </div>
 </div>
