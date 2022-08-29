@@ -79,8 +79,10 @@ mat-divider {
 #shortDescription {
   height: var(--text-short-height);
   opacity: var(--text-short-opacity);
+  display: var(--text-short);
 }
 #longDescription {
   height: var(--text-long-height);
   opacity: var(--text-long-opacity);
+  display: var(--text-long);
 }

@@ -16,6 +16,7 @@
 }
 
 .container-arrow {
+  margin-top: var(--margin-top-arrow);
   flex-grow: 1;
 }
 p {

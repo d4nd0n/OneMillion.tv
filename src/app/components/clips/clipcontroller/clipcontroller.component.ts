@@ -34,5 +34,11 @@ export class ClipcontrollerComponent implements OnInit {
   ngOnInit() {}
   changeState(newItem: string) {
     this.state = newItem == 'default' ? 'show' : 'hide';
+
+    if (this.state == 'show') {
+      document.body.style.setProperty('--margin-top-arrow', '0');
+    } else {
+      document.body.style.setProperty('--margin-top-arrow', '-60px');
+    }
   }
 }
