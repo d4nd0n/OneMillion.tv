@@ -6,11 +6,12 @@
   flex-flow: row nowrap;
   margin-top: 10px;
 }
+
 .container-top-frame {
   flex-flow: column wrap;
   background-color: #7272721f;
   border-radius: 5px;
-  flex-grow: 2;
+  flex-grow: 1;
   height: fit-content;
 }
 .container-clip-row {
@@ -21,7 +22,8 @@
   margin-bottom: 15px;
 }
 .container-space {
-  width: 17%;
+  width: 5%;
+  padding: 0;
 }
 .container-description {
 }
@@ -42,9 +44,11 @@
 }
 .item-description {
   color: white;
+  margin-top: -73px;
+  overflow: hidden;
 }
 .item-space {
-  flex-grow: 2;
+  flex-grow: 1;
 }
 
 .firstRow {

@@ -10,6 +10,8 @@
 }
 
 .container-video {
+  padding: 0;
+  max-width: 1920px;
 }
 
 .item-video {
@@ -19,4 +21,7 @@
 video {
   width: 100%;
   height: 100%;
+}
+
+media {
 }
