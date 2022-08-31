@@ -4,6 +4,11 @@
 
 .cart {
   background-color: #cdcdcd;
+  background-image: url('https://i.postimg.cc/yxnmRLbT/Old-TV-Play-Station.png');
+  background-attachment: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-top: 50px;
 }
 
