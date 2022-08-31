@@ -15,6 +15,10 @@
   justify-content: flex-start;
   align-items: center;
 }
+.container-user-comments {
+  justify-content: flex-start;
+  align-items: center;
+}
 
 .item-img {
 }

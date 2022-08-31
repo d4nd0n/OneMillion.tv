@@ -32,6 +32,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatIconModule } from '@angular/material/icon';
 import { HeaderCloseComponent } from './components/headers/header-close/header-close.component';
+import { CommentsComponent } from './components/comments/comments.component';
 
 @NgModule({
   imports: [
@@ -70,6 +71,7 @@ import { HeaderCloseComponent } from './components/headers/header-close/header-c
     ClipUploadComponent,
     TestComponentComponent,
     HeaderCloseComponent,
+    CommentsComponent,
   ],
   bootstrap: [AppComponent],
 })
