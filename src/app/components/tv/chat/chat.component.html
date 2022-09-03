@@ -1,0 +1,13 @@
+<div class="container container-chat">
+    <div class="container container-title">
+        <p>Chat</p>
+    </div>
+    <div class="container container-text">
+        <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
+            <div *cdkVirtualFor="let item of ds" class="example-item">{{item || 'Loading...'}}</div>
+          </cdk-virtual-scroll-viewport>
+    </div>
+    <div class="container container-answer">
+        <input class="input-answer" type="text" placeholder="Invia un messaggio" name="uname" required />
+    </div>
+</div>

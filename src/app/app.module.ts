@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { VideoComponent } from './components/video/video.component';
+import { VideoComponent } from './components/tv/video/video.component';
 import { TopClipsComponent } from './components/clips/top-clips/top-clips.component';
 import { ClipComponent } from './components/clips/clip/clip.component';
 import { ShopComponent } from './components/shop/shop.component';
@@ -33,6 +33,9 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatIconModule } from '@angular/material/icon';
 import { HeaderCloseComponent } from './components/headers/header-close/header-close.component';
 import { CommentsComponent } from './components/comments/comments.component';
+import { ChatComponent } from './components/tv/chat/chat.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+
 
 @NgModule({
   imports: [
@@ -48,6 +51,7 @@ import { CommentsComponent } from './components/comments/comments.component';
     MatRadioModule,
     MatIconModule,
     BrowserModule,
+    ScrollingModule,
   ],
   declarations: [
     AppComponent,
@@ -72,6 +76,7 @@ import { CommentsComponent } from './components/comments/comments.component';
     TestComponentComponent,
     HeaderCloseComponent,
     CommentsComponent,
+    ChatComponent,
   ],
   bootstrap: [AppComponent],
 })

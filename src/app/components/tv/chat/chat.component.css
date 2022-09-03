@@ -1,0 +1,83 @@
+* {
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+
+.container-chat {
+    /*background-color: aquamarine;*/
+    margin: 0;
+}
+
+.container-title {
+    /*background-color: rgb(4, 16, 187);*/
+    text-align: center;
+}
+
+.container-title p {
+    margin: 0;
+}
+
+
+.container-text {
+    /*background-color: rgb(67, 211, 0);*/
+    text-align: left;
+    padding: 0;
+}
+
+.container-text p {
+    font-size: 10;
+}
+
+.container-answer {
+    /*background-color: rgb(89, 130, 5);*/
+}
+
+.container-answer p {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.example-viewport {
+  height: 400px;
+}
+  
+.example-item {
+  height: 50px;
+  margin: 2px;
+}
+
+.input-answer {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    margin: 5px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    text-decoration: underline;
+  }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(240, 248, 255, 0);
+}
+  
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(213, 213, 213);
+}
+
