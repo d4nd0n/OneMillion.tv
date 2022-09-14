@@ -1,0 +1,17 @@
+#top-users {
+  float: center;
+  background-color: #000000;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#likebar {
+  background-color: #1b1b1b;
+  margin: 0;
+  padding: 0;
+}

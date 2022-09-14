@@ -1,5 +1,5 @@
 {
-  "compileOnSave": false,
+  "compileOnSave": true,
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
@@ -11,20 +11,33 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
-    /*"types": ["jest", "node"],
     "typeRoots": [
       "node_modules/@types"
-    ],*/
+    ],
     "lib": [
       "es2018",
       "dom"
     ],
-    // added
-    "allowSyntheticDefaultImports": true,
+	"resolveJsonModule": true,
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": true,
+  "strictPropertyInitialization": false,
   },
   "angularCompilerOptions": {
     "enableIvy": true,
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
-  }
+  },
+  "paths":{  
+   "@src/*":[  
+      "src/*"
+   ],
+   "@assets/*":[  
+      "src/assets/*"
+   ],
+   "@shared/*":[  
+      "src/app/shared/*"
+   ]
 }
+}
+
