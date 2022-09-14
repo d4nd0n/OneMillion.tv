@@ -35,7 +35,10 @@ import { HeaderCloseComponent } from './components/headers/header-close/header-c
 import { CommentsComponent } from './components/comments/comments.component';
 import { ChatComponent } from './components/tv/chat/chat.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
-
+import { TestPageComponent } from './pages/test-page/test-page.component';
+import { OverlayModule } from "@angular/cdk/overlay";
+import { HttpClientModule } from '@angular/common/http';
+import { ClipService } from './services/clip.service';
 
 @NgModule({
   imports: [
@@ -52,6 +55,8 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     MatIconModule,
     BrowserModule,
     ScrollingModule,
+    OverlayModule,
+    HttpClientModule,
   ],
   declarations: [
     AppComponent,
@@ -77,6 +82,10 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     HeaderCloseComponent,
     CommentsComponent,
     ChatComponent,
+    TestPageComponent,
+  ],
+  providers: [
+    ClipService
   ],
   bootstrap: [AppComponent],
 })

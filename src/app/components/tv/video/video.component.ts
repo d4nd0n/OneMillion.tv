@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Inject, Injectable, OnInit, ViewChild } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 import {
   animate,
@@ -8,6 +9,8 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
+import { ClipService } from 'src/app/services/clip.service';
+//import { ClipService } from 'src/app/services/clip.service';
 
 @Component({
   selector: 'app-video',
@@ -29,12 +32,26 @@ import {
 })
 export class VideoComponent implements OnInit {
   chatState = 'show';
-
-  constructor() {}
-
-  ngOnInit() {}
   name = 'Video events';
-  videoSource = '';
+  videoSource = "media\video\test_color.mp4"
+  baseUrl = 'http://localhost:8090/onemillion/api/getClips';
+
+  constructor(public http: HttpClient, @Inject(ClipService) service: ClipService){}//, private apiService: ApicallService){}
+
+  ngOnInit(){
+    //this.getUserList();
+  }
+
+  /*
+  getUserList() {
+    this.apiService
+    .getUsers()
+    .subscribe((data:any) => {
+      console.log(data);
+      this.users = data.data;
+    });
+  }
+  */
 
   @ViewChild('videoPlayer') videoplayer: any;
   public startedPlay: boolean = false;
@@ -61,4 +78,6 @@ export class VideoComponent implements OnInit {
   changeState(newItem: string) {
     this.chatState = newItem == 'default' ? 'show' : 'hide';
   }
+
+
 }

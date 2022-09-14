@@ -1,12 +1,8 @@
 <div class="tv">
-  <div class="container container-video">
-    <div class="item item-video">
-      <video controls (canplay)="pauseVideo(videoplayer)" #videoPlayer>
-        <source src="{{ videoSource }}" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>      
-    </div>
-    <div class="item item-chat"><app-chat></app-chat></div>
-
-  </div>
+  <div class="video">      
+    <video controls (canplay)="pauseVideo(videoplayer)" #videoPlayer>
+      <source src="https://rr4---sn-45nufxc-4jvl.googlevideo.com/videoplayback?expire=1662852005&ei=RcccY_XzLOuE0u8Pm-W56Ac&ip=194.32.122.55&id=o-AP56VDFBb9cRGJod_91KZd27j_to8UF33LdWxhP5ME4A&itag=22&source=youtube&requiressl=yes&spc=lT-KhngyUOxq-xA3MKprDDbpSx_PGNk&vprv=1&mime=video%2Fmp4&ns=O0ZJWLMn0uh4aJY-JpyJCVgH&cnr=14&ratebypass=yes&dur=287.300&lmt=1509169310447180&fexp=24001373,24007246&c=WEB&rbqsm=fr&n=jniJIyrItcGrwA&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRAIgQCKxCTXhd9j0AjzDumH5XrgOxn2FxP49x4BeOQ1AfqcCIDYF4E12LMWCJ04Xg3ONnsWCaHj1t_TrAE2O4_72rgBg&title=Screen%2FColor%20test%20video%20%5B1080p%5D&rm=sn-cpux-8ov67l,sn-f5fel7z&req_id=ad5fc2a2f1d2a3ee&cmsv=e&redirect_counter=2&cms_redirect=yes&ipbypass=yes&mh=Q3&mip=2001:b07:2ec:77fa:8166:7953:b7ee:f1ea&mm=29&mn=sn-45nufxc-4jvl&ms=rdu&mt=1662837218&mv=u&mvi=4&pcm2cms=yes&pl=49&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pcm2cms,pl&lsig=AG3C_xAwRAIgOmn6CPBGdth3ri3PXKx8ljgD6oykyytfrQ8JwqwyBekCIEhn7GZC8b1fvXs2AC4XK1fQ9-xdrKdV3rjJ_Jw1qVCt" type="video/mp4" /><!--{{ videoSource }}"--> 
+      Your browser does not support the video tag.
+    </video>   
+    <div class="chat"><app-chat></app-chat></div></div>  
 </div>

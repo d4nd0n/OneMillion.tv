@@ -6,6 +6,7 @@
   align-content: center;
   background-color: var(--navbar-scroll);
   transition: background-color 1s ease;
+  mix-blend-mode: var(--navbar-scroll-blend);
   color: var(--navbar-scroll-text);
   -webkit-box-shadow: var(--navbar-scroll-shadow);
   box-shadow: var(--navbar-scroll-shadow);

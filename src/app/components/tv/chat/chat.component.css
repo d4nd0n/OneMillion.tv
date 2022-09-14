@@ -10,8 +10,10 @@
 
 
 .container-chat {
-    /*background-color: aquamarine;*/
+    background-color: rgba(53, 53, 53, 0.603);
     margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .container-title {
@@ -45,7 +47,7 @@
 }
 
 .example-viewport {
-  height: 400px;
+  height: 450px;
 }
   
 .example-item {

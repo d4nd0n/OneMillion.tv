@@ -31,9 +31,12 @@ export class HeaderComponent implements OnInit {
     if (window.scrollY >= scrollHeigth) {
       document.body.style.setProperty('--navbar-scroll', 'white');
       document.body.style.setProperty('--navbar-scroll-text', 'black');
+      document.body.style.setProperty('--navbar-scroll-blend', 'normal');
+
     } else if (window.scrollY < scrollHeigth) {
       document.body.style.setProperty('--navbar-scroll', 'transparent');
       document.body.style.setProperty('--navbar-scroll-text', 'white');
+      document.body.style.setProperty('--navbar-scroll-blend', 'difference');
     }
   };
 
