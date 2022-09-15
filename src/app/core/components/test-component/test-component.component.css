@@ -28,3 +28,64 @@ video {
   width: 100%;
   height: 100%;
 }
+
+
+.frame {
+  background-color: #1b1b1b;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.container-controller {
+  flex-flow: row wrap;
+  flex-grow: 2;
+}
+
+.container-arrow {
+  margin-top: var(--margin-top-arrow);
+  flex-grow: 1;
+}
+p {
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+table {
+  display: table; /* Allow the centering to work */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  background-color: rgba(250, 235, 215, 0);
+  border: 0;
+}
+
+#clip {
+  padding: 2px;
+}
+
+
+.clip {
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}

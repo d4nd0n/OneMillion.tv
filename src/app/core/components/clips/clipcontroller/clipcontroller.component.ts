@@ -1,4 +1,6 @@
 import { Component, ContentChildren, OnInit, QueryList } from '@angular/core';
+import { ClipService } from '../../../../../services/clip.service';
+import { Clip } from '../../../../../models/clip';
 
 import {
   animate,
@@ -29,9 +31,20 @@ import {
 })
 export class ClipcontrollerComponent implements OnInit {
   state = 'show';
-  constructor() {}
+  clips;
 
-  ngOnInit() {}
+  constructor(private clipService: ClipService){}
+
+  ngOnInit() {
+    this.getClips();   
+
+    setTimeout(() => {
+      console.log("data value");
+      console.log(this.clips);
+    }, 5000);
+
+  }
+
   changeState(newItem: string) {
     this.state = newItem == 'default' ? 'show' : 'hide';
 
@@ -40,5 +53,13 @@ export class ClipcontrollerComponent implements OnInit {
     } else {
       document.body.style.setProperty('--margin-top-arrow', '-60px');
     }
+  }
+
+  getClips() {
+    this.clipService
+    .getClips()
+    .subscribe(data => {
+      this.clips = data.clips;
+    });
   }
 }

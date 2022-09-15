@@ -21,7 +21,6 @@ import { LikebarComponent } from './core/components/likebar/likebar.component';
 import { UsertabComponent } from './core/components/user/usertab/usertab.component';
 import { ArrowDownComponent } from './core/components/buttons/arrow-down/arrow-down.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
-import { CarouselComponent } from './core/components/carousel/carousel.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { UserTopClipComponent } from './core/components/user/user-top-clip/user-top-clip.component';
 import { ClipUploadComponent } from './core/components/clips/clip-upload/clip-upload.component';
@@ -38,7 +37,8 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { TestPageComponent } from './core/pages/test-page/test-page.component';
 import { OverlayModule } from "@angular/cdk/overlay";
 import { HttpClientModule } from '@angular/common/http';
-import { ClipService } from './core/services/clip.service';
+import { ClipService } from '../services/clip.service';
+import { DragScrollModule } from 'ngx-drag-scroll';
 
 @NgModule({
   imports: [
@@ -57,6 +57,7 @@ import { ClipService } from './core/services/clip.service';
     ScrollingModule,
     OverlayModule,
     HttpClientModule,
+    DragScrollModule,
   ],
   declarations: [
     AppComponent,
@@ -75,7 +76,6 @@ import { ClipService } from './core/services/clip.service';
     LikebarComponent,
     UsertabComponent,
     ArrowDownComponent,
-    CarouselComponent,
     UserTopClipComponent,
     ClipUploadComponent,
     TestComponentComponent,
@@ -83,9 +83,7 @@ import { ClipService } from './core/services/clip.service';
     CommentsComponent,
     ChatComponent,
     TestPageComponent,
-  ],
-  providers: [
-    ClipService
+    HomeComponent,
   ],
   bootstrap: [AppComponent],
 })

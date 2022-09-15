@@ -1,5 +1,4 @@
 import { Component, Inject, OnInit, ViewChild } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 
 import {
   animate,
@@ -32,8 +31,6 @@ export class VideoComponent implements OnInit {
   name = 'Video events';
   videoSource = "media\video\test_color.mp4"
   baseUrl = 'http://localhost:8090/onemillion/api/getClips';
-
-  constructor(public http: HttpClient){}//, @Inject(ClipService) private clipService: ClipService){}
 
   ngOnInit(){
   }

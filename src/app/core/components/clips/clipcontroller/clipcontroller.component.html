@@ -1,9 +1,9 @@
 <div class="frame">
   <div class="container">
     <div class="container container-controller" [@showState]="state">
-      <div id="clip" *ngFor="let clip of [0, 1, 2, 3, 4]">
+      <div id="clip" *ngFor="let clip of clips;">
         <app-clip></app-clip>
-        <p>15:31:19 - 15:31:30</p>
+        <p>{{clip.title.string}}</p>
       </div>
     </div>
     <div class="container container-arrow">

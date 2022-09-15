@@ -36,7 +36,6 @@ export class ArrowDownComponent implements OnInit {
   }
 
   onClick() {
-    console.log('CAZZO');
     this.rotate();
     this.emit(this.state);
   }
