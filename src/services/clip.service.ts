@@ -1,40 +1,43 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import * as Rx from "rxjs/Rx";
+import * as Rx from 'rxjs/Rx';
 import { from, Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 import { Clip } from '../models/clip';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-
 export class ClipService {
   constructor(private httpClient: HttpClient) {}
 
   // Retrieve one clip
   getClip() {
-    return this.httpClient.get(`http://localhost:8090/onemillion/api/getClips`).
-      pipe(
+    return this.httpClient
+      .get(`http://localhost:8090/onemillion/api/v1/getClip/a`)
+      .pipe(
         map((data: Clip[]) => {
           return data;
-        }), catchError( error => {
-          return throwError( 'Something went wrong!' );
+        }),
+        catchError((error) => {
+          return throwError('Something went wrong!');
         })
-      )
+      );
   }
 
   getClips() {
-    return this.httpClient.get(`http://localhost:8090/onemillion/api/getClips`).
-    pipe(
-      map((data: any) => {
-        console.log("data");
-        console.log(data);
-        return data;
-      }), catchError( error => {
-        return throwError( 'Something went wrong!' );
-      })
-    )
+    return this.httpClient
+      .get(`http://localhost:8090/onemillion/api/v1/getClips/`)
+      .pipe(
+        map((data: any) => {
+          console.log('data');
+          console.log(data);
+          return data;
+        }),
+        catchError((error) => {
+          return throwError('Something went wrong!');
+        })
+      );
   }
 
   /*
